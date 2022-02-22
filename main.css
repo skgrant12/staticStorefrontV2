@@ -4,7 +4,8 @@ body {
     height: 100%;
     padding: 0;
     margin: 0;
-    background-image: url(./assets/qiBoRX65T.jpg);
+    background-image: url(./assets/chickenBackground.png);
+    background-repeat: repeat;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     background-size: 100% 100%;
@@ -50,8 +51,7 @@ body {
   header {
     padding: 2.5em 0 0.5em;
     margin: 0;
-    background-image: url(./assets/chickenWallpaper.png);
-    background-repeat: none;
+    background-color: black;
   }
   
   header h1 {
