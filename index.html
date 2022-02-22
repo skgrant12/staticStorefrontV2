@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <title>Las Pollos Hermanas</title>
+</head>
+
+<body>
+    <header>
+        <!-- Top Nav Menu -->
+
+        <nav id="utilityMenu">
+            <div class="socials">
+                <ul>
+                    <li><a href="#"><img src="./assets/facebookLogo.png" alt="Facebook" border="0" class="socialIcon"
+                                width="28" height="28" /></a></li>
+                    <li><a href="#"><img src="./assets/twitterLogo.png" alt="Twitter" border="0" class="socialIcon"
+                                width="28" height="28" /></a></li>
+                    <li><a href="#"><img src="./assets/instaLogo.png" alt="Instagram" border="0" class="socialIcon"
+                                width="28" height="28" /></a></li>
+                </ul>
+            </div>
+            <ul>
+                <li class="acctNav"><a href="#" class="active">Login</a></li>
+                <li class="acctNav"><a href="#" class="active">Your Orders</a></li>
+            </ul>
+        </nav>
+
+        <!-- Header/Top Nav -->
+
+        <h1>Las Pollos Hermanas</h1>
+        <h2>Best Chicken in New Mexico Since...Forever!</h2>
+        <nav id="mainLinks">
+            <ul>
+                <li><a href="#">Our Story</a></li>
+                <li><a href="#">Locations</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Main Content -->
+
+    <div id="container">
+
+        <!-- Online Order Form -->
+
+        <div class="order">
+            <form>
+                <h2>BEGIN YOUR ONLINE ORDER</h2>
+                <fieldset>
+                    <p>
+                        <label>First Name:  <input name="firstName" required placeholder="First Name"></label>
+                    </p>
+                    <p>
+                        <label>Last Name:  <input name="lastName" required placeholder="Last Name"></label>
+                    </p>
+                    <p>
+                        <label>Phone Number:  <input name="phone" required placeholder="Phone"></label>
+                    </p>
+                    <p>
+                        <label>Address Line 1:  <input name="addressLine1" required placeholder="Address Line 1"></label>
+                    </p>
+                    <p>
+                        <label>Address Line 2: <input name="addressLine2" placeholder="Address Line 2"></label>
+                    </p>
+                    <p>
+                        <label> Desired Order Time: 
+                            <input name="time" type="time" required placeholder="Select Time">
+                        </label>
+                    </p>
+                    <p>
+                        <label>Select Your Location: 
+                            <select name="location" id="locationSelect" required>
+                                <option value="">--Please choose an option--</option>
+                                <option value="North Albuquerque" id="locationSelect">N. Albuquerque (4901 Cumbre
+                                    Del Sur Ct NE)</option>
+                                <option value="South Albuquerque">South Albuquerque (308 Negra Arroyo Lane)</option>
+                                <option value="Central Albuquerque">Central Albuquerque (1001 Central Avenue NE
+                                    Albuquerque, NM)</option>
+                            </select>
+                        </label>
+                    </p>
+                    <p>
+                        <label>Select Your Meal: 
+                            <select name="meal" id="mealSelect" required>
+                                <option value="">--Please choose an option--</option>
+                                <option value="2-Piece" id="mealSelect">2-Piece</option>
+                                <option value="3-Piece" id="mealSelect">3-Piece</option>
+                                <option value="4-Piece" id="mealSelect">4-Piece</option>
+                            </select>
+                        </label>
+                    </p>
+                    <p>
+                        <label>Choose your heat level: 
+                            <select name="heat" id="heatSelect" required>
+                                <option value="">--Please choose an option--</option>
+                                <option value="Walter's Fave">Walter's Fave</option>
+                                <option value="Skylar's Sweet Heat">Mashed Potatoes</option>
+                                <option value="Jesse's Jalapeno">Fries</option>
+                                <option value="Hank's Habanero">Side Salad</option>
+                            </select>
+                        </label>
+                    </p>
+                    <p>
+                        <label>Side #1: 
+                            <select name="side1" id="sideSelect1" required>
+                                <option value="">--Please choose an option--</option>
+                                <option value="Green Beans">Green Beans</option>
+                                <option value="Mashed Potatoes">Mashed Potatoes</option>
+                                <option value="Fries">Fries</option>
+                                <option value="Side Salad">Side Salad</option>
+                                <option value="Mac 'n Cheese">Mac 'n Cheese</option>
+                            </select>
+                        </label>
+                    </p>
+                    <p>
+                        <label>Side #2: </label>
+                        <select name="side2" id="sideSelect2" required>
+                            <option value="">--Please choose an option--</option>
+                            <option value="Green Beans">Green Beans</option>
+                            <option value="Mashed Potatoes">Mashed Potatoes</option>
+                            <option value="Fries">Fries</option>
+                            <option value="Side Salad">Side Salad</option>
+                            <option value="Mac 'n Cheese">Mac 'n Cheese</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label>Choose your sauce (optional): </label>
+                        <select name="side" id="sauceSelect">
+                            <option value="">--Please choose an option--</option>
+                            <option value="Ragin' Ranch">Ragin' Ranch</option>
+                            <option value="Re">Mashed Potatoes</option>
+                            <option value="Fries">Fries</option>
+                            <option value="Side Salad">Side Salad</option>
+                            <option value="Mac 'n Cheese">Mac 'n Cheese</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label>Beverage: 
+                            <select name="beverage" id="beverageSelect" required>
+                                <option value="">--Please choose an option--</option>
+                                <option value="Coke">Coke</option>
+                                <option value="Diet Coke">Diet Coke</option>
+                                <option value="Sprite">Sprite</option>
+                                <option value="Lemonade">Lemonade</option>
+                                <option value="Sweet Tea">Sweet Tea</option>
+                                <option value="Bottled Water">Bottled Water</option>
+                            </select>
+                    </p>
+                    <p>
+                        <label>Dessert: </label>
+                        <select name="dessert" id="dessertSelect" required>
+                            <option value="">--Please choose an option--</option>
+                            <option value="Banana Pudding">Banana Pudding</option>
+                            <option value="Jello Surprise">Jello Surprise</option>
+                            <option value="Chocolate Brownie Explosion">Chocolate Brownie Explosion</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label>Include Plasticware? </label>
+                        <input type="radio" id="plasticware" name="plasticware" value="Yes">
+                        <label for="Yes">Yes</label>
+                        </input>
+                        <input type="radio" id="plasticware" name="plasticware" value="No">
+                        <label for="No">No</label>
+                        </input>
+                    </p>
+                    <p>
+                        <label>Additional Instructions: </label>
+                        <br />
+                        <textarea id="addInstructions" name="addInstructions" rows="5" cols="30" maxlength="200">
+                    </textarea>
+                    </p>
+                    <input type="submit" value="Submit" class="button"></input>
+                </fieldset>
+            </form>
+
+            <!-- Sidebar -->
+
+            <section id="sidebar">
+                <h1>HERMANAS GIVES BACK</h1>
+                <p>At yams mushrooms organic berries gobble. Chainsaw foal hay hook, herbs at combine harvester,
+                    children is mallet. bull bowels cat chicken cow, calf donkey duck. Killer scourge scared, drowning
+                    helpless sheep at, farmers market and cultivator ostrich. Outhouse at nails mower. Chainsaw foal hay
+                    hook, herbs at combine harvester, children is mallet. Garden windmill chicks, hen at corn in, lettus
+                    a peppers. Baa potato donkey mouse, at gate grain bins woof. In the straw rai.</p>
+                <div id="over">
+                    <img src="https://www.wellplated.com/wp-content/uploads/2021/10/Air-Fried-Chicken-Tenders.jpg"
+                        alt="Chicken Tenders" height="50%" width="50%" />
+                </div>
+                <p>Cow, calf donkey duck. Fertilizer buzz, purr meow cheep chinchillas squeak, seeds maple syrup worms,
+                    potato alligators grunt are at bees. Feed in a woof, a farmers market. Grapes nest pitch fork an
+                    plows maple syrup yearlings, quilt squea.</p>
+                <div id="over">
+                    <img src="https://images.pexels.com/photos/6565761/pexels-photo-6565761.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
+                        alt="Hermanas Employees Donating Food" height="50%" width="50%" />
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <footer>
+        <div id="menuLinks">
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Back to Top</a></li>
+                <li>&copy 2022 Sarah Grant</li>
+                <li>This site has no affiliation with <em>Breaking Bad</em>.</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
